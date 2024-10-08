@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-pink-500 to-indigo-500 h-screen flex items-center justify-center">
+
+  <div class="bg-white p-8 rounded-lg shadow-lg w-80">
+    <h2 class="text-2xl font-bold text-center mb-6">LOGIN</h2>
+    
+    <form action="#">
+      <!-- Email Input -->
+      <div class="mb-4">
+        <label class="block text-gray-700" for="email">
+          <svg class="inline-block w-5 h-5 mr-2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4 4m0 0l-4-4m4 4V4m8 4a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <input class="border w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" type="email" placeholder="Email" required />
+        </label>
+      </div>
+
+      <!-- Password Input -->
+      <div class="mb-4">
+        <label class="block text-gray-700" for="password">
+          <svg class="inline-block w-5 h-5 mr-2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-2.09.895-4 2-4s2 1.91 2 4v1h-4v-1zm-2 6v-3H4v3m16 0h-8v-3a4 4 0 00-8 0v3" />
+          </svg>
+          <input class="border w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" type="password" placeholder="Password" required />
+        </label>
+      </div>
+
+      <!-- Remember Me Checkbox -->
+      <div class="flex items-center mb-4">
+        <input type="checkbox" id="remember" class="form-checkbox h-4 w-4 text-pink-500">
+        <label for="remember" class="ml-2 text-gray-700">Remember me</label>
+      </div>
+
+      <!-- Login Button -->
+      <button class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+        LOGIN
+      </button>
+
+      <!-- Social Login -->
+      <div class="text-center text-gray-500 my-4">Or login with</div>
+      <div class="flex justify-center space-x-4">
+        <button class="flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h-2v-4h-2v-3h2v-2c0-1.374.851-2 2-2h2v3h-1c-.169 0-1 0-1 1v2h2v3zm-9 16h24v-3h-24v3zm15.379-11c-2.625 0-4.479 1.704-4.479 4.348s1.854 4.348 4.479 4.348c2.625 0 4.479-1.704 4.479-4.348s-1.854-4.348-4.479-4.348zm.129 6.536c-1.233 0-2.186-.993-2.186-2.188 0-1.195.954-2.188 2.186-2.188s2.186.993 2.186 2.188c0 1.195-.954 2.188-2.186 2.188z"/></svg>
+          Facebook
+        </button>
+        <button class="flex items-center bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg">
+          <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12l5 5M12 15l-3-3M4 6v12M8 6v12M6 3l3 6H9l-3-3m9 3H3l3-3"/></svg>
+          Google
+        </button>
+      </div>
+
+      <!-- Sign up -->
+      <div class="text-center text-gray-600 mt-6">
+        Not a member? <a href="#" class="text-pink-500 hover:underline">Sign up now</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
